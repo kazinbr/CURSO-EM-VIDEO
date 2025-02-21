@@ -18,9 +18,9 @@ while resp != 5:
   resp = int(input('Escolha o que deseja fazer com os valores informados: '))
   
   if resp == 1:
-    print(f'A soma de {n1} e {n2} é igual a {n1 + n2}.')
+    print(f'{n1} + {n2} = {n1 + n2}.')
   if resp == 2:
-    print(f'A multiplicação de {n1} e {n2} é igual a {n1 * n2}.')
+    print(f'{n1} X {n2} = {n1 * n2}')
   if resp == 3:
     maior = 0 
     if n1 > n2:
