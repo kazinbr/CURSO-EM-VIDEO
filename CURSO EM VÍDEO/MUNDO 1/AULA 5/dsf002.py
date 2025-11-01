@@ -1,2 +1,2 @@
-nome = input('Qual étiago o seu nome?')
+nome = input('Qual é o seu nome?')
 print('Seja Bem-Vindo, Sr. {}!'.format(nome))
