@@ -5,6 +5,7 @@ correto.
 '''
 n = ''
 while n != 'M' and n != 'F':
-  n = str(input('Qual o seu sexo? ')).strip().upper()
-
+  n = str(input('Qual o seu sexo? [M/F] ')).strip().upper()
+  if n != 'M' or 'F':
+    print('Valores inválidos. Tente novamente.')
 print(f'Sexo {n} foi registrado com sucesso!')
