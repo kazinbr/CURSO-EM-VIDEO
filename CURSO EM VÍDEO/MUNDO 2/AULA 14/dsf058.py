@@ -9,7 +9,7 @@ from random import randint
 print('Vamos jogar de Adivinhar?\nO computador irá gerar um número, e você tem que acertar para ganhar!')
 
 n1 = randint(0, 10)
-n2 = int(input('Escolha um número: '))
+n2 = int(input('Escolha um número de 0 a 10: '))
 tent = 0
 
 while n2 != n1:
