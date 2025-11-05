@@ -6,11 +6,13 @@ Ex: 5! = 5x4x3x2x1 = 120
 
 n = int(input('Escolha um número para ser fatorado: '))
 res = 1
+c = n
 
-original_n = n
-
-while n > 1:
-  res *= n
-  n -= 1
+print(f'Calculando {n}! = ', end='')
+while c > 0:
+  print(f'{c}', end='')
+  print(' x ' if c > 1 else ' = ', end='')
+  res *= c
+  c -= 1
   
-print(f'O fatorial de {original_n}! é {res}')
+print(f'{res}')
