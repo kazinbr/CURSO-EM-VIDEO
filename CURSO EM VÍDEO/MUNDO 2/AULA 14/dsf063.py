@@ -5,8 +5,8 @@ Sequencia de Fibonacci.
 
 Ex: 0 > 1 > 1 > 2 > 3 > 5 > 8
 '''
-n = int(input('Escolha dois números para iniciar a Sequência de Fibonacci\nO primeiro: '))
-n1 = int(input('O segundo: '))
+n = 0
+n1 = 1
 n2 = int(input('Escolha quantos números você gostaria de ver na sequência: '))
 
 print(f'{n} > {n1} > ', end='')
