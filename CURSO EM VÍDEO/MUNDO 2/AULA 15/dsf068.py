@@ -5,17 +5,19 @@ consecutivas que ele conquistou no final do jogo.
 '''
 from random import randint
 
-n = c = s = v = 0
-p = ''
+v = 0
+
 print ('=-='*10)
 print('Vamos jogar Par ou Ímpar!')
 print ('=-='*10)
 
 while True: 
-    p = input('Escolha Par ou Ímpar? [P/I]: ').upper().strip()
     n = int(input('Escolha um número: '))
     c = randint(0, 10)
     s = c + n
+    p = ' '
+    while p not in 'PI':
+        p = input('Escolha Par ou Ímpar? [P/I]: ').upper().strip() [0]
     print('---'*10)
     if s % 2 == 0:
         print(f'Você jogou {n} e o computador {c}. Total de {s}, DEU PAR')

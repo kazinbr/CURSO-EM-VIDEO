@@ -11,32 +11,27 @@ C) quantas mulheres tem menos de 20 anos.
 
 h = m = i = 0
 
-p = ""
 cont = ''
 print('-'*30)
 print('   CADASTRE UMA PESSOA   ')
 print('-'*30)
 
-Id = 0
-
 while True: 
-    while True:
-        Id = int(input('Idade: '))
-        if Id >= 18:
-            i =+1
-        break
-    while True:
-        p = str(input('Sexo: [M/F]')).strip().upper()
-        if p in ("M", "F"):
-            if p == "M":
-                h+=1
-            elif p == "F":
-                if Id >=20:
-                    m+=1  
-            break
-    cont = str(input('Quer continuar? [S/N]')).strip().upper()
-    if cont in ('S', 'N'):
-        if cont == 'N':
+    Id = int(input('Idade: '))
+    p = ' '
+    while p not in 'MF':
+        p = str(input('Sexo: [M/F] ')).strip().upper() [0]
+    if Id >= 18:
+         i += 1
+    if p == 'M':
+         h += 1
+    if p == 'F' and Id < 20:
+         m += 1
+
+    cont = ' '
+    while cont not in 'SN':
+        cont = str(input('Quer continuar? [S/N] ')).strip().upper() [0]
+    if cont == 'N':
             break
 
 print(f'===== FIM DO PROGRAMA =====')

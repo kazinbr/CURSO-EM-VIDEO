@@ -9,7 +9,7 @@ OBS: COnsidere que o caixa possui cédulas de R$50, R$20, R$10 e R$1/
 tot = cin = vin = dez = um = 0
 
 print('==='*10)
-print('          BANCO')
+print('{:^30}'.format('BANCO'))
 print('==='*10)
 
 while True:
