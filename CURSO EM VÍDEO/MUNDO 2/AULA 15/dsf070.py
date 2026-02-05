@@ -8,7 +8,7 @@ C) Qual é o nome do produto mais barato.
 '''
 
 tot = barato_val = caro = 0
-barato = ' '
+barato = ''
 
 
 print("-=-"*10)
